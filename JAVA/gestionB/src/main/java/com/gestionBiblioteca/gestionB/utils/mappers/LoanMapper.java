@@ -13,7 +13,7 @@ import com.gestionBiblioteca.gestionB.domain.entities.LoanEntity;
 public interface LoanMapper {
   @Mappings({
             @Mapping(target = "id", ignore = true),
-            @Mapping(target = "user.id", source = "user_id"),
+            @Mapping(target = "user.id", source = "user_id"), 
             @Mapping(target = "book.id", source = "book_id"),
             @Mapping(target = "loan_date", ignore = true),
     })
